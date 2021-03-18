@@ -18,20 +18,7 @@ yarn add nextjs-basic-auth-middleware
 ```
 
 ## Usage
-
-> **NOTE**
-> This library requires you to set an experimental config option for
-> middleware support on a document level.
-
-Set the following configuration option in your `next.config.js`:
-
-```js
-    experimental: {
-        documentMiddleware: true
-    }
-```
-
-Then add the middleware to the `getInitialProps` method of your document:
+Add the middleware to the `getInitialProps` method of your document:
 
 ```js
     Document.getInitialProps = async ({req, res}) => {
